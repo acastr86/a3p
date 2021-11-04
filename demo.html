@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            a3P Request My Demo
+            Author: Adonis Castro
+            Date: 12/01/2020
+
+            Filename: demo.html
+        -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="policy, process, procedure, protocol, task, goal" />
+        <title>Request My Demo - a3P</title>
+        <link href="css/reset.css" rel="stylesheet" />
+        <link href="css/demo_form.css" rel="stylesheet" />
+        <link href="css/demo.css" rel="stylesheet" />
+        <script src="script/form.js" defer></script>
+    </head>
+    <body>
+            <header>
+                <figure>
+                        <img src="img/a3p_demo.png" id="logo" alt="Automatic Policy, Process and Procedure" />
+                        <figcaption>My Demo</figcaption>
+                </figure>
+                <nav class="horizontal"> 
+                        <a id="navicon" href="#"><img src="img/navicon.png" alt="" /></a>
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="webinar.html">Webinar</a></li>
+                           <li><a href="#" class="submenuTitle currentPage">Products</a>
+                                <ul class="submenu">
+                                    <li><a href="modeling.html">Modeling</a></li>
+                                    <li><hr /></li>
+                                    <li><a href="prices.html">Prices</a></li>
+                                    <li><a href="demo.html"  class="currentPage">Request a Demo</a></li>
+                                 </ul>
+                            </li>
+                           <li><a href="#" class="submenuTitle">Services</a>
+                                <ul class="submenu">
+                                    <li><a href="training.html">Training</a></li>
+                                    <li><a href="implementation.html">Implementation</a></li>
+                                    <li><a href="integration.html">Integration</a></li>
+                                    <li><a href="support.html">Support</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="reviews.html">Reviews</a></li>
+     
+                        </ul>
+                </nav>
+        
+            </header>
+            <article class="demo">
+                    <h1>Request My Demo</h1>
+                    <p>We at a3P are more than pleased to present you a demo of all the functionalities
+                        provided by this platform always oriented to explain from the point of view of the business sector
+                        to which your company belongs and the experience you have in the use of policies, processes and procedures.
+                    </p>
+                    <p>We have several time slops which we can coordinate in a future call that you would receive from our team
+                        in order to schedule the presentation of the product.
+                    </p>
+                    <ul>
+                       <li>10:00 AM - 12:00 AM</li>
+                       <li>2:00 PM - 4:00 PM</li>
+                       <li>4:00 PM - 6:00 PM</li>
+                    </ul>
+                    <h2>Schedule my Demo</h2>
+                    <p>Please register the following information that will help us to contact you and better understand the type of Demo
+                        that we will present to you.
+                    </p>
+            
+                    <form id="demo_request" action="mailto:test@gmail.com?subject=Demo" method="post">
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            <div class="formRow">
+                                <label for="name">Company Name*</label>
+                                <input name="custName" id="name" type="text" placeholder="company name" required />
+                            </div>
+                            <div class="formRow">
+                                <label for="street">Street address</label>
+                                <input name="custStreet" id="street" type="text" />
+                            </div>
+                            <div class="formRow">
+                                <label for="city">City</label>
+                                <input name="custCity" id="city" type="text" value="Weslaco" />
+                            </div>
+                            <div class="formRow">
+                                <label for="state">State</label>
+                                <input name="custState" id="state" type="text" value="TX" />
+                            </div>
+                            <div class="formRow">
+                                <label for="zip">Postal code</label>
+                                <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)" 
+									pattern="^\d{5}(-\d{4})?$" />
+                            </div>
+                            <div class="formRow">
+                                <label for="phone">Phone number</label>
+                                <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" 
+                                    pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+                            </div>
+                            <div class="formRow">
+                                <label for="mail">E-mail*</label>
+                                <input name="custEmail" id="mail" type="email" required />
+                            </div>
+                            
+                            <div class="formRow">
+                                <label for="info">Where did you hear about us?
+                                <br />(select all that apply)
+                                </label>
+                                <select name="infoSrc" id="info" size="5" multiple>
+                                    <option value="internet">Internet</option>
+                                    <option value="mag">Magazine</option>
+                                    <option value="news">Newspaper</option>
+                                    <option value="word">Word of Mouth</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="formRow">
+                                    <label for="assistance">How many people are going to assist?</label>
+                                    <input name="assistance" id="assistance" type="number" value="1" step="1" min="0" max="10" />
+                            </div>
+                            <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+                            <label for="mailCB">Send me future webinar events!
+                            </label>
+                            
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Business Information</legend>
+                            <div class="formRow">
+                                <label for="demoDate">Preferred date:</label>
+                                <input name="demoDate" id="demoDate" type="date" />
+                            </div>
+                            
+                            <div class="formRow"> 
+                                <label for="sector">Line of Business</label> 
+                                <select name="sector" id="sector">
+                                        <option value="">Please select one option</option>
+                                        <option value="finance">Finance</option>
+                                        <option value="health_care">Health Care</option>
+                                        <option value="education">Education</option>
+                                        <option value="manufacturing">Manufacturing</option>
+                                        <option value="goverment">Goverment</option>
+                                        <option value="restaurant">Restaurants Establishments</option>   
+                                </select> 
+                            </div>
+                            
+                            <div class="formRow">
+                               <label>Do you use PPP?</label>
+                               <fieldset class="ppGroup">
+                                  <label for="fYes">Yes</label>
+                                  <input name="sPPP" id="fYes" value="yes" type="radio" />
+                                  <label for="fNo">No</label>
+                                  <input name="sPPP" id="fNo" value="no" type="radio" />
+                               </fieldset>
+                            </div>
+                            <div class="formRow">
+                                    <label for="products">Products interes?
+                                    <br />(select all that apply)
+                                    </label>
+                                    <select name="products" id="products" size="5" multiple>
+                                        <option value="modeling" selected>Modeling</option>
+                                        <option value="monitoring">Monitoring and Tracking</option>
+                                        <option value="workflow">Woerflow and Protocols</option>
+                                        <option value="automation">Simulation and Automation</option>
+                                        <option value="reporting">Reporting and Dashboard</option>
+                                        <option value="whatif">What if?</option>
+                                        <option value="agile">Agile Task</option>
+                                    </select>
+                                </div>
+                                
+                            <label for="commBox">Tell us more about your PPP experience!</label>
+                            <textarea name="pppExp" id="commBox"></textarea>
+                        </fieldset>
+                        
+                        <div id="buttons">
+                            <input type="submit" value="Request My Demo" />
+                            
+                        </div>
+                        
+                      </form>
+                </article>
+                <article class="confidential">
+                        <h3>Confidential Agreement</h3>
+                        <p> All the information provided in this form and what we can write down during the presentation of the demo is complete
+                            confidentiality and will never be disclosed by us. Only a review given by you will be disclosed after experimenting
+                            the demo, but of course with your permission.
+        
+                        </p>
+                        <p>On the other hand, just like your information and your company data is something of great value for your company, in the same way
+                            Everything presented in the demo is of great importance and a competitive value of our company, for this reason we will be in contact
+                            with you in order to sign a Confidentiality Agreement that we surely you will understand well.
+                        </p>
+                    </article>
+         
+                <footer>
+                        <address> 
+                            a3P &#8226; 
+                            1400 Street, Weslaco TX &nbsp; 78596 &#8226; 
+                            956-447-8596 
+                        </address>
+                 </footer>
+    </body>
+
+</html>

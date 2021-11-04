@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+@import url("designs.css");
+@import url("layout.css");
+@import url("menu.css");
+
+@font-face {
+   font-family: Segment14;
+   src: url('../fonts/segment14.woff') format('woff'),
+        url('../fonts/segment14.ttf') format('truetype');
+}
+
+
+/*
+    Webinar Page Style Sheet
+
+    Author: Adonis Castro
+    Date: 11/28/2020
+
+    Filename: webinar.css
+
+*/
+
+/*Layout Styles */
+
+article, aside{
+    padding: 2%;
+    font-size: 1.4em;
+}
+
+article {
+    flex: 1 1 400px;   
+}
+
+aside {
+    flex:1 1 300px;
+}
+
+
+/* Webinar time Styles */
+
+article.webinar > time{
+    display: block;
+    margin-bottom: 30px;
+}
+
+
+article.webinar > time::before {
+	content: "\2756";
+    font-weight: bold;
+    color: hsl(224, 75%, 29%);
+    font-size: 1.2em;
+    vertical-align: bottom;
+    margin-right: 2px;
+    font-family: 'Times New Roman', Times, serif;
+  
+}
+
+ /* Styles for the Countdown Clock */
+
+ div#countdown {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+ 
+ }
+
+ div#countdown div {
+    display: block;
+    width: 100%;
+    line-height: 1.2em;
+    font-size: 1em;
+    font-family: segment14, sans-serif;
+    color: black;
+    margin: 0px 10px;
+    text-align: center;
+    text-shadow: 0px 0px 2px black, 0px 0px 4px black, -1px 1px 8px white, 
+                 1px -1px 8px white, -1px 1px 12px white, 1px -1px 12px white;
+ }
+ 
+ div#countdown div span {
+    font-size: 2em;   
+ }
+ 
+ 
+  /* =========================
+   Reduced Spaces: 0 to 900px 
+   =========================
+*/
+/* Define a max size to switch the form position */
+
+@media only screen and (max-width: 900px) {
+	article {
+        order: 99;
+    }
+    
+    aside{
+        flex: 1 1 600px;
+    }
+	
+	footer {
+		order: 100;
+	}
+}
+
+
+
+  

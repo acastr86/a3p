@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+@import url("designs.css");
+@import url("layout.css");
+@import url("menu.css");
+
+
+
+/*
+    Training Page Style Sheet
+
+    Author: Adonis Castro
+    Date: 11/29/2020
+
+    Filename: training.css
+
+*/
+
+
+
+
+/* Heading Styles */
+
+h1 {
+	font-size: 1.2em;
+}
+
+h2 {
+	font-size: 1em;
+}
+
+h1, h2 {
+	font-family: Quicksand, Verdana, Geneva, sans-serif;
+	letter-spacing: 0.1em;
+}
+
+article.training
+{
+	padding: 2%;
+}
+
+article.training > ol{
+	column-count: 2;
+	column-gap: 30px;
+	column-width: 300px;
+}
+
+article.training > ol > li{
+	break-inside: avoid;
+	margin: 10px;
+}
+
+article.training h1, article.training h2 {
+	background-color: rgba(0,120,215,.5);
+	color: rgb(101, 101, 101);
+}
+
+
+
+article.training {
+	width: 100%;
+	margin: 0 2%;
+}
+
+
+/* List Styles */
+
+article.training ol {
+	list-style-type: upper-roman;
+}
+
+article.training ol  ol {
+	list-style-type: upper-alpha;
+}
+
+article.training ol ol ol {
+	list-style-type: decimal;
+}
+

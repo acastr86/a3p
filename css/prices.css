@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+@import url("designs.css");
+@import url("layout.css");
+@import url("menu.css");
+
+
+/*
+    Prices Page Style Sheet
+
+    Author: Adonis Castro
+    Date: 11/30/2020
+
+    Filename: prices.css
+
+*/
+
+/* Section Styles */
+
+section.prices {
+    padding: 2%;
+    background: rgb(231, 231, 231);
+ }
+ 
+ section.prices table.prices{
+     margin: 2% 5%;
+ }
+
+ /* Article Styles */
+ 
+ article#overview, article#conclusion {
+    padding: 10px;
+ }
+ 
+ article#overview h1 {
+    color: black;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    line-height: 1em;
+    margin: 10px 0px 20px 0px;
+    padding-left: 12px;
+ }
+ 
+ article#overview p, article#conclusion p {
+    margin: 12px;
+ }
+
+
+/* Table Styles */
+
+table.prices {
+	background: white;
+	border-collapse: collapse;
+	font-size: 0.75em;
+	width: 90%;
+}
+
+/* Table Cell Styles */
+
+table.prices th, table.prices td {
+	border: 1px solid gray;
+	padding: 5px;
+	vertical-align: top;
+}
+
+/* Table Caption Styles */
+
+table.prices caption {
+	caption-side: bottom;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+/* Row Group Styles */
+
+table.prices thead {
+	background: rgb(31, 73, 125);
+    color: white;
+    text-transform: uppercase;
+}
+
+table.prices tfoot {
+	background: rgb(31, 73, 125);;
+    color: white;
+    font-size: 1.6em;
+}
+
+table.prices thead tr {
+	height: 30px;
+}
+
+table.prices tbody tr {
+	height: 40px;
+}
+
+
+th, td {
+    word-wrap: break-word;
+}
+
+td{
+    text-align: center;
+}
+
+tbody tr th{
+    text-align: left;
+}
+
+/* Column Group Styles */
+
+col#firstCol {
+    width: 16%;
+}
+
+col.plans {
+	width: 21%;
+}
+
+tbody tr td:nth-of-type(even){
+    background: white;
+
+}
+
+tbody tr td:nth-of-type(odd){
+    background: rgb(181, 204, 136);
+
+}
+/*
+thead tr th:first-of-type{
+    border: none;
+    color: rgb(231, 231, 231);
+    background: rgb(231, 231, 231)
+}
+*/
+
+/* Support Icons Style */
+
+table.prices  td::after{
+    font-size: 1.5em;
+    letter-spacing: 0.5em;
+}
+
+table.prices  td.email::after {
+    content: "\2709";
+}
+
+table.prices  td.email.messaging::after {
+    content: "\2709 \1F4AC";
+}
+
+table.prices  td.email.phone.messaging::after {
+    content: "\2709 \1F4AC \260E";
+}
+
+table.prices  td.email.phone.messaging.virtual::after {
+    content: "\2709 \1F4AC \260E \1F4BB";
+}
+
+table.prices  td.email.phone.messaging.virtual.resource::after {
+    content: "\2709 \1F4AC \260E \1F4BB \1F464";
+}
+
+table.prices tr td.included::after{
+    content: "\2714";
+}
+/*
+table.prices tr:nth-of-type(n + 5) td:not(.included)::after{
+    content: "\2718";
+}
+*/
+
+table.prices tr:nth-of-type(n + 5) th:before{
+    content: "";
+    padding-left: 10px;
+}
+
+table.prices tbody tr:nth-of-type(1) td{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+table.prices tbody tr:nth-of-type(1) td::before{
+    content: "\0024";
+    font-size: 0.5em;
+    vertical-align: super;
+}
+
+table.prices tbody tr:nth-of-type(1) td::after{
+    content: " /month";
+    font-size: 0.5em;
+    vertical-align: sub;
+    letter-spacing: 0.1em;
+}
+

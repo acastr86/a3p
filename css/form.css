@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/*
+    Webinar Form Style Sheet
+
+    Author: Adonis Castro
+    Date: 11/27/2020
+
+    Filename: form.css
+*/
+
+
+/* Webinar form Registration Style */
+
+form#webinar {
+	display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(0,120,215);
+    border: none;
+
+}
+
+form#webinar  h2, form#webinar  h3{
+    color: white;
+    text-align: center;
+    margin: auto 5%;
+    font-weight: normal;
+
+}
+
+form#webinar  h2{
+    font-size: 0.9em;
+    margin: 2% auto;
+}
+
+form#webinar  h3{
+    font-size: 0.7em;
+}
+
+form#webinar  label{
+    color: white;
+    display: block;
+    margin: 0px  20px;
+    font-size: 0.7em;
+    padding: 0px 10px;
+    width: 80%;
+}
+
+form#webinar > fieldset {
+	
+	font-size: 1.2em;
+	padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border: none;
+ 
+}
+
+form#webinar  input, form#webinar  textarea, 
+form#webinar select
+{
+    display: block;
+    margin: 20px;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    padding: 10px;
+    width: 80%;
+}
+
+div#experience input{
+    display: inline;
+    margin: 0px;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    padding: 0px;
+   
+}
+
+div#experience{
+    color: white;
+    font-size: 0.7em;
+    margin: 20px;
+    padding: 10px;
+    width: 80%;
+}
+
+
+/* Form Button Styles */
+
+div#buttons {
+	text-align: center;
+	width: 100%;
+}
+
+button[type='submit'] {
+	font-size: 1.2em;
+	padding: 5px;
+	margin: 15px;
+}
+
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(220, 255, 220);
+}
+
+input#firstName:focus:valid, 
+input#lastName:focus:valid, 
+input#email:focus:valid{
+	background: rgb(220, 255, 220) url(../img/valid.png) center right/auto no-repeat; 
+}
+
+input#firstName:focus:invalid, 
+input#lastName:focus:invalid, 
+input#email:focus:invalid {
+	background: rgb(255, 232, 233) url(../img/invalid.png) center right/auto no-repeat; 
+}

@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: Nobile;
+	src: url(nobile-webfont.woff) format('woff'),
+	url(nobile-webfont.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Quicksand;
+	src: url(Quicksand-Regular.woff) format('woff'),
+	url(Quicksand-Regular.ttf) format('truetype');
+}
+
+/*
+    All Screen Style Sheet
+
+    Author: Adonis Castro
+    Date: 11/27/2020
+
+    Filename: designs.css
+
+*/
+
+
+/* =============================================
+	Base styles used by All Screens
+   =============================================
+*/
+
+/* HTML and Body Styles */
+
+html {
+    background: url(../img/a3p_back.png) center center / cover no-repeat fixed;
+    height: 100%;
+    font-family: Segoe UI,Segoe UI Semilight,Segoe UI Light,Arial,Sans-Serif;
+    font-size: 18px;
+ }
+
+ body {
+    box-shadow: rgb(51, 51, 51) 5px 0px 15px, rgb(51, 51, 51) -5px 0px 15px;
+    margin: 0px auto;
+    min-width: 320px;
+    max-width: 1240px;
+    width: 100%;
+    background: rgb(231, 231, 231);
+ }
+
+ p {
+    line-height: 1.4em;
+    margin: 10px;
+ }
+ 
+ header, footer {
+    width: 100%;
+ }
+
+ a, a:visited, a:link, a:hover {
+     text-decoration: none;
+     color: rgb(31, 73, 125);
+     font-weight: bold;
+ }
+
+ /* Body Header Styles */
+
+body > header {
+    background: hsl(204, 76%, 69%);
+ }
+
+ body > header > h1 {
+    background-color: rgb(52,55,52);
+    color: rgb(231, 255, 231);
+    font-size: 2em;
+    line-height: 2em;
+    text-align: center;
+ }
+
+/* Header Figure Style */
+
+ body > header > figure {
+    position: relative;
+ }
+
+ body > header > figure > img {
+    display: block;
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+ }
+ 
+ 
+ body > header > figure >  figcaption {
+    font: normal small-caps bold 1.5em/2em
+        Quicksand, Verdana, Geneva, sans-serif;
+    text-shadow: rgb(181, 211, 181) 2px 2px 1px,
+        rgba(21, 21, 21, 0.66) 5px 5px 25px;  
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    top: 80%;
+    left: 20px;
+    right: 0;
+ }
+ 
+
+ /* Footer Styles */
+ 
+ body > footer {
+    background-color: rgb(117, 140, 72);
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px 0px;
+ }
+
+ body > footer address {
+	color: white; 
+	color: rgba( 255, 255, 255, 0.6);
+	font: normal small-caps bold 0.9em/1.2em
+		  Nobile, Verdana, Geneva, sans-serif;
+	text-align: center;
+}

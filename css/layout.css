@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*
+    Layout Style Sheet
+
+    Author: Adonis Castro
+    Date: 11/27/2020
+
+    Filename: layout.css
+
+*/
+
+/* Main Page Layout */
+
+body {
+	display: flex;
+    flex-flow: row wrap;
+}
+
+
+body > header, body > footer {
+	width: 100%;
+}

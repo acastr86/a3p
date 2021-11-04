@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            Webinar - Foundations of a3p Modeling
+            Author: Adonis Castro
+            Date: 11/28/2020
+
+            Filename: webinar.html
+        -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="policy, process, procedure, protocol, task, goal" />
+        <title>a3p Webinar | Foundations of a3p Modeling</title>
+        <link href="css/reset.css" rel="stylesheet" />
+        <link href="css/webinar.css" rel="stylesheet" />
+        <link href="css/form.css" rel="stylesheet" /> 
+        <script src="script/countdown.js" defer></script>
+        <script src="script/form.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img src="img/a3p_webinar.png" id="logo" alt="Automatic Policy, Process and Procedure" />
+
+                <div id="countdown">
+                    <div><span id="days">dd</span><br />Days</div>
+                    <div><span id="hrs">hh</span><br />Hours</div>
+                    <div><span id="mins">mm</span><br />Minutes</div>
+                    <div><span id="secs">ss</span><br />Seconds</div>
+                </div>
+                <figcaption>a3P Webinar Events</figcaption>
+            </figure>
+            <nav class="horizontal"> 
+                <a id="navicon" href="#"><img src="img/navicon.png" alt="" /></a>
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="webinar.html"  class="currentPage">Webinar</a></li>
+                   <li><a href="#" class="submenuTitle">Products</a>
+                        <ul class="submenu">
+                            <li><a href="modeling.html">Modeling</a></li>
+                            <li><hr /></li>
+                            <li><a href="prices.html">Prices</a></li>
+                            <li><a href="demo.html">Request a Demo</a></li>
+                         </ul>
+                    </li>
+                   <li><a href="#" class="submenuTitle">Services</a>
+                        <ul class="submenu">
+                            <li><a href="training.html">Training</a></li>
+                            <li><a href="implementation.html">Implementation</a></li>
+                            <li><a href="integration.html">Integration</a></li>
+                            <li><a href="support.html">Support</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reviews.html">Reviews</a></li>
+    
+                   
+                </ul>
+             </nav>
+
+        </header>
+        <article class="webinar" >
+            <time datetime="2022-01-04T10:00:00-06:00">January 04, 2022 10:00 AM (CT)</time>
+            <h1>Foundations of a3p Modeling</h1>
+            <p>
+                Every company needs to use many class of system for the proper
+                function of the business whether these manuals, computerized
+                or a hybrid between the two; so far there is no easy way
+                to be able to shape the policies, processes and procedures in which
+                these systems should be based so that they are easily transferable and understandable
+                between workers, and at the same time are interpreted by the computer to understand
+                the semantics and intention of them.
+            </p>
+            <p>
+                In this webinar, join a3p reserach to learn
+                the fundamentals of a3p Modeling. You will learn how to translate your systems in a
+                declarative and being able to define the goals and objectives that are pursued in each policy created.
+            </p>
+            <p>
+               In the registration form it is important that you specify the business sector in which
+               your company performs, that way we can guide the examples that we will show in the webinar
+               to the sectors that have the most public participating in the webinar.
+             </p>
+
+             <p>
+               Equally important is that you specify any prior questions you may have during the webinar for that
+               way address thems within the presentation, however there will be a question section, but only
+               those that time allows, hence the importance of preparing them at the time of registration.
+            </p>
+           
+        </article>
+        <aside>
+            <form id="webinar" action="mailto:test@gmail.com?subject=Registration" method="POST">
+                <div>
+                    <h2>Register for this webinar</h2>
+                    <h3>Complete the form and you will receive an email with the access to the event</h3>
+                </div>
+                <fieldset>
+                    <input name="first_name"  id="firstName" type="text" placeholder="First name *" required/>
+                    <input name="last_name" id="lastName" type="text" placeholder="Last name *" required/>
+                    <input name="email" id="email" type="email" placeholder="email *" required />
+                    <label for="sector">What is your business sector?*</label>
+                    <select name="sector" id="sector" required>
+                        <option value="">Please select one option</option>
+                        <option value="finance">Finance</option>
+                        <option value="health_care">Health Care</option>
+                        <option value="education">Education</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="goverment">Goverment</option>
+                        <option value="restaurant">Restaurants Establishments</option>         
+                    </select>
+                    <input name="know" id="know" type="text" placeholder="How do you know about us?" 
+                        list="knowType"/>
+                    <datalist id="knowType">
+                        <option value="Internet"></option>
+                        <option value="Magazine" ></option>
+                        <option value="Newspaper" ></option>      
+                    </datalist>
+                   
+                    <label for="userExperience">Your experience with PPP<br />
+                        (0=none; 10=advanced)</label>
+                    <div id="experience">   
+                            0
+                            <input name="user_experience" id="userExperience" type="range"
+                                value="5" step="1" min="0" max="10" />
+                            10
+                        </div>
+                    <textarea name="questions" placeholder="I have a question that I would like to address in the webinar" rows="10"></textarea>
+					 <div id="buttons">
+						<button type="submit">Register</button>
+					</div>
+                </fieldset>
+               
+            </form>
+        </aside>
+        <footer>
+                 <address> 
+                    a3P &#8226; 
+                    1400 Street, Weslaco TX &nbsp; 78596 &#8226; 
+                    956-447-8596 
+                </address>
+        </footer>
+    </body>
+
+</html>
